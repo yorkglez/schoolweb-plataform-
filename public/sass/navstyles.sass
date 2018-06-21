@@ -1,0 +1,29 @@
+$backgroundnav:   #1E1D1D
+.navbar
+	box-sizing: border-box
+	background-color: $backgroundnav
+	border: 1px solid black
+	.nav-link
+		color: white
+	.nav-item
+		&:hover
+			box-sizing: border-box
+			border-bottom: 2px solid tomato
+	a
+		font-size: 1.1em
+		i
+			color: white
+			font-size: 1em
+	#link-username
+		color: white
+.active
+	box-sizing: border-box
+	border-bottom: 2px solid tomato
+#musername, #mlogout
+	display: none
+
+@media (max-width: 575px)
+	.idesktop, .navname
+		display: none
+	#musername, #mlogout
+		display: block

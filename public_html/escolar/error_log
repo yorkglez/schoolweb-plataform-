@@ -1,0 +1,1 @@
+[11-Dec-2017 22:42:55 UTC] PHP Fatal error:  Can't use function return value in write context in /home/malastar/schoolweb/app/Http/Controllers/SubjectslistController.php on line 28

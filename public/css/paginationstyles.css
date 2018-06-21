@@ -1,0 +1,21 @@
+#pagination {
+  background-color: white; }
+  #pagination li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff; }
+    #pagination li:hover {
+      background-color: #ddd; }
+    #pagination li:first-of-type {
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px; }
+    #pagination li:last-of-type {
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px; }
+  #pagination ul .pactive {
+    background-color: #007bff;
+    color: white;
+      color-border-color: #007bff; }

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Patua+One");
+body {
+  overflow-x: hidden; }
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+#wrapper.toggled {
+  padding-left: 250px; }
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  background-color: #181818;
+  padding: 0;
+  -webkit-box-shadow: 0px 0px 10px grey;
+  box-shadow: 0px 0px 10px grey;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-top: none; }
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px; }
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 65px 10px; }
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px; }
+
+.sidebar-nav {
+  position: absolute;
+  top: 60px;
+  width: 250px;
+  margin: 0;
+  padding: 0; }
+  .sidebar-nav .sidebar-brand {
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid black; }
+    .sidebar-nav .sidebar-brand a {
+      color: white; }
+  .sidebar-nav li.active {
+    background: #fff;
+    border: 1px solid tomato;
+    border-bottom: 2px solid black; }
+    .sidebar-nav li.active a {
+      color: inherit;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      font-weight: 600; }
+    .sidebar-nav li.active span {
+      color: black; }
+    .sidebar-nav li.active i {
+      color: black; }
+  .sidebar-nav li {
+    list-style: none;
+    text-indent: 0px;
+    line-height: 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2); }
+    .sidebar-nav li:hover:not(:first-child) {
+      background: #fff;
+      border: 1px solid tomato; }
+      .sidebar-nav li:hover:not(:first-child) i {
+        color: black; }
+    .sidebar-nav li i {
+      color: rgba(255, 255, 255, 0.7); }
+    .sidebar-nav li a {
+      font-family: "Patua One", cursive;
+      color: white;
+      font-weight: 400;
+      display: block; }
+      .sidebar-nav li a:hover {
+        color: inherit;
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s; }
+        .sidebar-nav li a:hover span {
+          color: black; }
+      .sidebar-nav li a span {
+        font-family: "Patua One", cursive;
+        font-size: 1.1em;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.7); }
+
+#wrapper.short {
+  padding-left: 80px; }
+
+#wrapper.short #page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 65px 10px; }
+
+#wrapper.short #sidebar-wrapper {
+  width: 80px; }
+  #wrapper.short #sidebar-wrapper .sidebar-nav {
+    width: 80px; }
+    #wrapper.short #sidebar-wrapper .sidebar-nav .sidebar-brand {
+      font-size: 16px; }
+    #wrapper.short #sidebar-wrapper .sidebar-nav .sidetext {
+      display: none; }
+    #wrapper.short #sidebar-wrapper .sidebar-nav li i {
+      font-size: 30px; }
+
+@media (max-width: 575px) {
+  body {
+    overflow-x: auto; }
+  #wrapper {
+    padding-left: 0; }
+  #sidebar-wrapper {
+    width: 0; }
+  #wrapper.toggled {
+    padding-left: 0px; }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 50px; }
+  .sidebar-nav {
+    width: 50px; }
+    .sidebar-nav .sidebar-brand {
+      display: none; }
+    .sidebar-nav .sidetext {
+      display: none; }
+    .sidebar-nav li i {
+      font-size: 28px; } }

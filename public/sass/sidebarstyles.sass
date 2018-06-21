@@ -1,0 +1,129 @@
+$sidebcolor: #181818
+@import url('https://fonts.googleapis.com/css?family=Patua+One')
+$font: 'Patua One', cursive
+body
+	overflow-x: hidden
+#wrapper
+	padding-left: 0
+	transition: all 0.5s ease
+#wrapper.toggled
+	padding-left: 250px
+#sidebar-wrapper
+	z-index: 1000
+	position: fixed
+	left: 250px
+	width: 0
+	height: 100%
+	margin-left: -250px
+	background-color: $sidebcolor
+	padding: 0
+	box-shadow: 0px 0px 10px grey
+	box-sizing: border-box
+	border: 1px solid black
+	border-top: none
+
+#wrapper.toggled #sidebar-wrapper
+	width: 250px
+
+#page-content-wrapper
+	width: 100%
+	position: absolute
+	padding: 65px 10px
+
+#wrapper.toggled #page-content-wrapper
+	position: absolute
+	margin-right: -250px
+.sidebar-nav
+	position: absolute
+	top: 60px
+	width: 250px
+	margin: 0
+	padding: 0
+	.sidebar-brand
+		height: 50px
+		font-size: 18px
+		line-height: 50px
+		background-color: rgba(white,0.9)
+		border-bottom: 2px solid black
+		a
+			color: white
+	li.active
+		background: #fff
+		border: 1px solid tomato
+		border-bottom: 2px solid black
+		a
+			color: inherit
+			transition: all 0.2s
+			font-weight: 600
+		span
+			color: black
+		i
+			color: black
+	li
+		list-style: none
+		text-indent: 0px
+		line-height: 30px
+		border-bottom: 1px solid rgba(gray,0.2)
+		&:hover:not(:first-child)
+			background: #fff
+			border: 1px solid tomato
+			i
+				color: black
+		i
+			color: rgba(white,0.7)
+		a
+			font-family: $font
+			color: white
+			font-weight: 400
+			display: block
+			&:hover
+				color: inherit
+				transition: all 0.2s
+				span
+					color: black
+
+			span
+				font-family: $font
+				font-size: 1.1em
+				font-weight: 300
+				color: rgba(white,0.7)
+
+// mouse leave
+#wrapper.short
+	padding-left: 80px
+#wrapper.short #page-content-wrapper
+	width: 100%
+	position: absolute
+	padding: 65px 10px
+#wrapper.short #sidebar-wrapper
+	width: 80px
+	.sidebar-nav
+		.sidebar-brand
+			font-size: 16px
+			// display: none
+		width: 80px
+		.sidetext
+			display: none
+		li
+			i
+				font-size: 30px
+@media (max-width: 575px)
+	body
+		overflow-x: auto
+	#wrapper
+		padding-left: 0
+	#sidebar-wrapper
+		width: 0
+	#wrapper.toggled
+		padding-left: 0px
+	#wrapper.toggled #sidebar-wrapper
+		width: 50px
+	.sidebar-nav
+		.sidebar-brand
+			display: none
+		width: 50px
+		.sidetext
+			display: none
+		li
+			i
+				font-size: 28px

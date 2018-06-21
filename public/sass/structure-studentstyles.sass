@@ -1,0 +1,65 @@
+
+.container-fluid
+	padding: 0
+	min-height: 600px
+#content
+	background-color: #EDEBEB
+.footer
+	height: 140px
+	width: 100%
+	// position: absolute
+	bottom: 0
+	padding: 2px
+	background-color: #1E1D1D
+	.content-footer
+		p
+			color: tomato
+		#footer-social
+			display: flex
+			justify-content: center
+			align-items: center
+			li
+				display: flex
+				justify-content: center
+				align-items: center
+				list-style: none
+				margin: 0 5px
+				padding: 0 5px
+			li:not(:last-child)
+				border-right: 1px solid white
+				i
+					&:hover
+						color: tomato
+		.footer-head
+			color: tomato
+		#reserved
+			color: white
+		#contact
+			text-align: center
+.pagetitle
+	text-align: center
+label
+	font-weight: bold
+
+@media (min-width: 576px)
+	#contact
+		font-size: 1.1em
+	#footer-social
+		li
+			min-width: 100px
+			height: 50px
+			a
+				color: white
+			i
+				font-size: 2em
+@media (max-width: 576px)
+	#footer-social
+		li
+			min-width: 50px
+			height: 50px
+			a
+				color: tomato
+			i
+				font-size: 2em
+	#reserved
+		text-align: center

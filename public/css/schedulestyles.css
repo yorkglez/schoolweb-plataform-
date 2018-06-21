@@ -1,0 +1,21 @@
+.table-container {
+  width: 95%; }
+  .table-container table {
+    font-family: arial; }
+    .table-container table th {
+      width: 70px; }
+    .table-container table td, .table-container table tr, .table-container table th {
+      width: 40px;
+      border: 1px solid black; }
+    .table-container table td, .table-container table tr, .table-container table th {
+      max-width: 100px;
+      text-align: center; }
+
+p {
+  margin: 0px; }
+
+@media (max-width: 576px) {
+  .table-container {
+    width: 100%; }
+    .table-container p {
+      font-size: 13px; } }

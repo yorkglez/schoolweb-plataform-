@@ -1,0 +1,19 @@
+.navbar {
+  background-color: #1E1D1D;
+  border: 1px solid black; }
+  .navbar .nav-link {
+    color: white; }
+
+#content {
+  background-color: #EDEBEB; }
+
+.footer {
+  background-color: #1E1D1D; }
+body{
+    /*background-color: #1E1D1D;*/
+}
+.pagetitle {
+  text-align: center; }
+
+label {
+  font-weight: bold; }

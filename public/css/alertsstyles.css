@@ -1,0 +1,11 @@
+.alert {
+  border-color: rgba(0, 0, 0, 0.2); }
+
+p {
+  font-size: 1.1em;
+  color: black; }
+
+.account-info {
+  font-size: 1.25em; }
+  .account-info span {
+    font-weight: bold; }
